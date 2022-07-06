@@ -246,5 +246,5 @@ if __name__ == "__main__":
         logging.info('best model path {}'.format(checkpoint_callback.best_model_path))
     if args.comment:
         model = KoGPT2Comment.load_from_checkpoint(args.model_params)
-        torch.save(model, f'./comment_model.pt')
+        # torch.save(model, f'./comment_model.pt')
         model.comment()
