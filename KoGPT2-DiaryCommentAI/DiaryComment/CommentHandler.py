@@ -5,7 +5,7 @@ from ts.torch_handler.base_handler import BaseHandler
 
 class CommentHandler(BaseHandler):
   def inference(self, data):
-    tok = TOKENIZER = PreTrainedTokenizerFast.from_pretrained("skt/kogpt2-base-v2",
+    tok = PreTrainedTokenizerFast.from_pretrained("skt/kogpt2-base-v2",
                                                               bos_token='</s>', eos_token='</s>', unk_token='<unk>',
                                                               pad_token='<pad>', mask_token='<unused0>')
     with torch.no_grad():
